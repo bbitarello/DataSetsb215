@@ -38,3 +38,4 @@ rsconnect/
 ^\.vscode$
 ^inst/tutorials/*/*_files$
 ^tests/manual$
+^README\.Rmd$
