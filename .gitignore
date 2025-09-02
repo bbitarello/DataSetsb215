@@ -3,3 +3,13 @@
 .RData
 .Ruserdata
 .DS_Store
+# html tutorial output
+inst/tutorials/*/*.html
+inst/tutorials/*/*.sqlite
+
+# deployment output
+rsconnect/
+inst/doc
+doc
+Meta
+reference/
