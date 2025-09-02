@@ -19,7 +19,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 
 
-# Tasks: 
+## Tasks: 
 
 -   DataCamp activities
 -   Work through this document
@@ -27,19 +27,19 @@ knitr::opts_chunk$set(echo = FALSE)
 -   Create an R markdown document with your personal notes and code
 -   Complete RQ1
 
-# Learning outcomes: 
+## Learning outcomes: 
 
-1.  Getting started with R and RStudio
 
-2.  Understand the difference between R and Rstudio
 
-3.  Use the R console (command-line)
+1.  Understand the difference between R and Rstudio
 
-4.  Use R as a calculator
+2.  Use the R console (command-line)
 
-5.  Understand the concepts of input and output in R
+3.  Use R as a calculator
 
-6.  Assign variables
+4.  Understand the concepts of input and output in R
+
+5.  Assign variables
 
 7.  Understand the main variable types in R (string, Boolean, numeric)
 
@@ -51,7 +51,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 11. Save your code in an R script
 
-# What is R?
+## What is R?
 
 R is awesome. This is our first lesson. Let's dive in.
 
@@ -386,7 +386,7 @@ class(x) # this command tells you the class of a given variable or R object.
 We'll cover these data types and their uses in depth in Lab 2, but for now if you want a head start you can learn more at  [Data types in R. W3schools.com.
     https://www.w3schools.com/r/r_data_types.asp](https://www.w3schools.com/r/r_data_types.asp) .
     
-### Numbers
+### A note on "Numbers"
 
 There are three number types in R:
 
@@ -398,7 +398,7 @@ There are three number types in R:
 -   complex: number is written with an "i" as the imaginary part. Less
     used.
 
-### Example
+**Example:**
 
 Try these in the sandbox at the end of this section.
 
@@ -489,8 +489,11 @@ numbers
 
 ```
 
+# Before next class
 
-## Links & References
+Work on the DataCamp activities covering these data structures (All Chapters under the "Introduction to R" DataCamp course posted under DataCamp assignments).
+
+# Links & References
 
 [R Foundation for Statistical Computing](https://www.r-project.org/foundation/)
     

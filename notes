@@ -1,0 +1,15 @@
+#Notes
+
+# add tutorial to package
+usethis::use_tutorial("inst/tutorials/Lab1.Rmd", "01_R, Rstudio: Crash Course")
+
+
+# run tutorial
+pak::pak("bbitarello/DataSetsb215")
+
+
+library(DataSetsb215)
+
+learnr::run_tutorial() #check it's there
+
+learnr::run_tutorial("01_R_basics.Rmd")

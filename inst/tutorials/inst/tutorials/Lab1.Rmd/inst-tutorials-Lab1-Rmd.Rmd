@@ -1,5 +1,5 @@
 ---
-title: "01_R_basics"
+title: "01_R, Rstudio: Crash Course"
 output: learnr::tutorial
 runtime: shiny_prerendered
 ---
