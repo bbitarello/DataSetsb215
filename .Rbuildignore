@@ -12,6 +12,9 @@ rsconnect/
 ^\.github/
 ^inst/tutorials/.*\.html$
 ^inst/tutorials/.*\.sqlite$
+^inst/tutorials/*/.DS_Store
+^inst/tutorials/*/images/
+^inst/tutorials/*/lab1_bdb/
 ^revdep$
 ^LICENSE\.md$
 ^cran-comments\.md$
