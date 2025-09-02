@@ -489,11 +489,11 @@ numbers
 
 ```
 
-# Before next class
+## Before next class
 
 Work on the DataCamp activities covering these data structures (All Chapters under the "Introduction to R" DataCamp course posted under DataCamp assignments).
 
-# Links & References
+## Links & References
 
 [R Foundation for Statistical Computing](https://www.r-project.org/foundation/)
     
