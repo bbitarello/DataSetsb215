@@ -25,7 +25,7 @@ knitr::opts_chunk$set(echo = FALSE)
 -   Work through this document
 -   Create a basic R script
 -   Create an R markdown document with your personal notes and code
--   Complete RQ1
+-   Complete DataCamp assingments (All Introduction to R chapters) before next lab
 
 ## Learning outcomes: 
 
