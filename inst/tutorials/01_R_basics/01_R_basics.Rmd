@@ -488,13 +488,6 @@ numbers
 ```
 
 
-
-## R Quiz 1
-
-When you're ready, take the quiz. Go to our workspace, Lab1_Activity,
-open the file Rquiz1.Rmd, and click Run Document
-
-
 ## Links & References
 
 [R Foundation for Statistical Computing](https://www.r-project.org/foundation/)

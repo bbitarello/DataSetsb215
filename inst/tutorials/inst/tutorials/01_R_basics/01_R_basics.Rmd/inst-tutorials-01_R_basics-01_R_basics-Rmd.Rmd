@@ -1,5 +1,5 @@
 ---
-title: "Lab1"
+title: "01_R_basics"
 output: learnr::tutorial
 runtime: shiny_prerendered
 ---
