@@ -5,8 +5,9 @@ output:
     progressive: true
     allow_skip: false
     id: "com.example.tutorials.lab1"
-    version: 1.2
+    version: 1.5
     mathjax: default
+    toc: true
 runtime: shiny_prerendered
 editor_options: 
   markdown: 
@@ -277,10 +278,10 @@ Here is a non-exhaustive list of common mathematical operators you may want to u
 
 ## Getting info about a function
 
-In your prompt, type:
+In your prompt, type `?log` or `help(log)`:
 
-```{r, echo =T, eval=F}
-?log
+```{r, echo = T, eval = F}
+help(log)
 ```
 
 This will make an R documentation appear on the right side of your
@@ -306,13 +307,13 @@ Note: typing `help()` and the name of the function of interest inside the parent
 For example, try to find the help page for the function `tstrsplit`:
 
 ```{r, echo = T, eval = F}
-?tstrsplit
+help(tstrsplit)
 ```
 
 You got an error, which would make some people give up. But if you are
-certain the function exists, you can try:
+certain the function exists, you can try `??tstrsplit`:
 
-```{r, echo = T, eval = F}
+```{r, echo = T, eval = F, include = F}
 ??tstrsplit
 ```
 

@@ -1,0 +1,8 @@
+url: https://bbitarello.github.io/DataSetsb215/
+template:
+  bootstrap: 5
+tutorials:
+- name: Lab1
+  title: 01.R, Rstudio: Crash Course
+- name: Lab2
+  title: Data Structures

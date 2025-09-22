@@ -3,10 +3,6 @@
 
 # DataSetsb215
 
-<!-- badges: start -->
-
-<!-- badges: end -->
-
 The goal of DataSetsb215 is to …
 
 ## Installation

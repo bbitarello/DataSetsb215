@@ -39,3 +39,6 @@ rsconnect/
 ^inst/tutorials/*/*_files$
 ^tests/manual$
 ^README\.Rmd$
+^_pkgdown\.yml$
+^docs$
+^codecov\.yml$
