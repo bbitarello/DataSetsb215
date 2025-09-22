@@ -5,7 +5,8 @@ output:
     progressive: true
     allow_skip: false
     id: "com.example.tutorials.lab1"
-    version: 1.1
+    version: 1.2
+    mathjax: default
 runtime: shiny_prerendered
 editor_options: 
   markdown: 
@@ -13,36 +14,41 @@ editor_options:
 ---
 
 ```{r setup, include=FALSE}
-library(learnr)                                                 
-library(tutorial.helpers)                                     
-library(gradethis)                                            
-library(tidyverse)                                            
-library(knitr)                                                
-library(ggmosaic)                                             
-library(praise)                                               
+library(learnr)
+library(tutorial.helpers)
+library(gradethis)
+library(tidyverse)
+library(knitr)
+library(ggmosaic)
+library(praise)
 library(utils)
 knitr::opts_chunk$set(echo = FALSE, tidy = T)
 ```
 
-## Tasks: 
+<script language="JavaScript" src="js/exercise-font-size.js"></script>
+
+## Tasks
 
 -   Complete DataCamp activities (All chapters of "Getting Started with R")
 -   Work through this document
 -   Create a basic R script
 -   Create an R markdown document with your personal notes and code
--   Complete RQ1
+-   Complete the Quiz at the end of this doc
+-   Downlod the file with your answers and upload to moodle
 
-## Learning outcomes: 
+## Learning outcomes 
 
-1.  Understand the difference between R and Rstudio
+1.  Getting started with R and RStudio
 
-2.  Use the R console (command-line)
+2.  Understand the difference between R and Rstudio
 
-3.  Use R as a calculator
+3.  Use the R console (command-line)
 
-4.  Understand the concepts of input and output in R
+4.  Use R as a calculator
 
-5.  Assign variables
+5.  Understand the concepts of input and output in R
+
+6.  Assign variables
 
 7.  Understand the main variable types in R (string, Boolean, numeric)
 
@@ -187,20 +193,21 @@ in an output being [1] 4. Try it:
 
 ```{r, echo = T, eval = F}
 2+2 #input
-
 ```
 
 In these labs, the input will show up in a gray box and the output, if
 any, will follow in a white box.
 
-```{r, r-add2, echo = T}
+```{r, r-add2, echo = T, eval = T}
 2+2
 ```
 
-## log()
+Now try running below the operation 
+
+## Logs and Roots
 
 You can use a wide variety of math functions to make calculations here,
-e.g., log() calculates the log of a number:
+e.g., `log()` calculates the log of a number:
 
 ```{r,  r-log1, echo =T }
 log(10)
@@ -211,7 +218,8 @@ log(10)
 Parentheses are used both as a way to group elements of the calculation
 and also as a way to denote the arguments of functions. (The "arguments"
 of a function are the set of values given to it as input.) For example,
-log(3) is applying the function log() to the argument 3.
+`log(3)` is applying the function `log()` to the argument `3`.
+
 
 ## sqrt()
 
@@ -232,7 +240,7 @@ $$4^3$$ is written as:
 Of course, many math functions can be combined to give an almost
 infinite possibility of mathematical expressions. For example,
 
-$$\frac{1}{sqrt(2\pi(3.1)^2)}e^{-\frac{(12-10.7)^2}{2(3.1)}}$$
+$$\frac{1}{\sqrt2\pi\times 3.1^2}e^{-\frac{(12-10.7)^2}{2\times 3.1}}$$
 
 can be calculated with:
 
@@ -240,13 +248,15 @@ can be calculated with:
 (1/(sqrt(2 * pi * (3.1)^2))) * exp(-(12-10.7)^2/(2*3.1))
 ```
 
-Try to run these yourself in the sandbox:
+Try to run these yourself in the sandbox. For practice you should type things in instead of copying and pasting (trust us):
 
-```{r sandbox1, exercise=TRUE, eval = FALSE}
+```{r sandbox1, exercise = TRUE, eval = FALSE}
 
 ```
 
 ## R commands summary
+
+Here is a non-exhaustive list of common mathematical operators you may want to use in R:
 
 | **Description**          | **Operator**   |
 |--------------------------|----------------|
@@ -274,32 +284,43 @@ In your prompt, type:
 ```
 
 This will make an R documentation appear on the right side of your
-Rstudio pane. This is an R help page.
+Rstudio pane. This is an R help page. 
+
 
 ![](images/image2.png){width="80%"}
 
--   All pre-built functions in R have R pages that you can access in
-    this way
--   If you are trying to access the help function for a package that is
-    not installed by default in R, you will need to add an extra "?"
 
-For example, try to find the help page for the function "tstrsplit":
+Note: typing `help()` and the name of the function of interest inside the parentheses gives you the same result. Try it!
 
-```{r, echo = T, eval = T}
+```{r,  sandbox-help-log, echo = T, exercise=TRUE, eval = FALSE }
+
+```
+
+
+**Remember**:
+
+-   All pre-built functions in R have R pages that you can access in this way
+-   If you are trying to access the help function for a package that is not installed by default in R, you will need to add an extra "?"
+- Most other packages you install will also have such help pages but you can only access the info if you have installed the package AND loaded it.
+
+For example, try to find the help page for the function `tstrsplit`:
+
+```{r, echo = T, eval = F}
 ?tstrsplit
 ```
 
 You got an error, which would make some people give up. But if you are
 certain the function exists, you can try:
 
-```{r, echo = T, eval = T}
+```{r, echo = T, eval = F}
 ??tstrsplit
 ```
 
-This will show any match to "tstrsplit" within installed packages in
-your workspace.
+This will show any match to "tstrsplit" within installed packages in your workspace. Something like this:
+![](images/image3.png)
 
-Note:
+
+## Packages
 
 -   If you click on "Packages" in the lower right, you will see
     currently installed packages. The checkmark highlights those that
@@ -310,7 +331,7 @@ Note:
 Sandbox: Use the area below for any R practice
 
 ```{r sandbox2, exercise=TRUE, eval = FALSE}
-
+help(log)
 ```
 
 ## Assigning variables
@@ -389,19 +410,19 @@ class(x) # this command tells you the class of a given variable or R object.
 We'll cover these data types and their uses in depth in Lab 2, but for now if you want a head start you can learn more at  [Data types in R. W3schools.com.
     https://www.w3schools.com/r/r_data_types.asp](https://www.w3schools.com/r/r_data_types.asp) .
     
-### A note on "Numbers"
+### Numbers
 
 There are three number types in R:
 
--   numeric: the most common type in R; contains any number with or
+-   **numeric:** the most common type in R; contains any number with or
     without a decimal
--   integer: numeric data without decimals. This is used when you are
+-   **integer:** numeric data without decimals. This is used when you are
     certain that you will never create a variable that should contain
     decimals. Just add the letter L after the number to create an integer.
--   complex: number is written with an "i" as the imaginary part. Less
+-   **complex:** number is written with an "i" as the imaginary part. Less
     used.
 
-**Example:**
+### Example
 
 Try these in the sandbox at the end of this section.
 
@@ -492,10 +513,22 @@ numbers
 
 ```
 
-## Before next class
 
-Work on the DataCamp activities covering these data structures (All Chapters under the "Introduction to R" DataCamp course posted under DataCamp assignments).
 
+## R Quiz 1
+
+When you're ready, take the quiz. In your console, type:
+
+
+```{r sandbox-quiz, exercise=F, echo = T, eval = F}
+
+learnr::run_tutorial("Quiz1.Rmd")
+
+```
+
+
+```{r download-answers, child = system.file("child_documents/download_answers.Rmd", package = "tutorial.helpers")}
+```
 ## Links & References
 
 [R Foundation for Statistical Computing](https://www.r-project.org/foundation/)

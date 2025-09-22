@@ -4,7 +4,7 @@
 #' @export
 #'
 #' @examples run_lab1()
-run_lab1<-function(){
+run_lab<-function(x = "Lab1"){
   require(learnr)
-  learnr::run_tutorial(name = "Lab1", package = "DataSetsb215")
+  learnr::run_tutorial(name = x, package = "DataSetsb215",as_rstudio_job = F)
 }

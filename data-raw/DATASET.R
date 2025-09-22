@@ -12,3 +12,4 @@ quick_fun <- function(fname = "rev3q16SexRatio") {
   remove(tmp)
   do.call("use_data", list(as.name(fname), overwrite = TRUE))
 }
+lapply(names(allF), function(x) quick_fun(fname = x))
