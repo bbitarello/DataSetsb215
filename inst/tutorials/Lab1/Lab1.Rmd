@@ -13,23 +13,26 @@ editor_options:
 ---
 
 ```{r setup, include=FALSE}
-library(learnr)
-knitr::opts_chunk$set(echo = FALSE)
+library(learnr)                                                 
+library(tutorial.helpers)                                     
+library(gradethis)                                            
+library(tidyverse)                                            
+library(knitr)                                                
+library(ggmosaic)                                             
+library(praise)                                               
+library(utils)
+knitr::opts_chunk$set(echo = FALSE, tidy = T)
 ```
-
-
 
 ## Tasks: 
 
--   DataCamp activities
+-   Complete DataCamp activities (All chapters of "Getting Started with R")
 -   Work through this document
 -   Create a basic R script
 -   Create an R markdown document with your personal notes and code
--   Complete DataCamp assingments (All Introduction to R chapters) before next lab
+-   Complete RQ1
 
 ## Learning outcomes: 
-
-
 
 1.  Understand the difference between R and Rstudio
 
@@ -97,9 +100,9 @@ without R.**
 
 ## How does the Rstudio Cloud workspace work?
 
-Join the B215: Biostatistics with R (Fall 2023) Posit Cloud workspace. This space will be updated by the
-instructor often, and you will see a mirrored version in your own space.
-If the workspace is changed by the instructor, you would need to delete your mirrored version and create a new one to see those changes -- but hopefully we won't need to do this!
+Join the B215: Biostatistics with R (Fall 2025) Posit Cloud workspace. This space will be updated often, and you will see a mirrored version in your own space.
+
+**Important:**If the workspace is changed by the instructor, you would need to delete your mirrored version and create a new one to see those changes -- but hopefully we won't need to do this!
 
 When you start RStudio, it will automatically start R as well. **You run
 R inside RStudio.**
@@ -139,8 +142,8 @@ So how do you save your code?
 An R script is a text file containing your R code. Commented lines ('\#'
 sign) are read as comments.
 
--   Go to the Lab Activities \> Lab1_Activity.
--   Click on File \> New File \> Rscript. This will open a blank file.
+-   Go to the Weekly Lab Activities \> Lab1 activity.
+-   Click on File \> New File \> R Script. This will open a blank file.
 -   Type "\#" followed by your full name. That is a comment and is
     ignored by R.
 -   In the next line, type:
