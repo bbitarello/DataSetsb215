@@ -3,6 +3,7 @@ template:
   bootstrap: 5
 tutorials:
 - name: Lab1
-  title: 01.R, Rstudio: Crash Course
+  title: Crash Course
 - name: Lab2
   title: Data Structures
+
