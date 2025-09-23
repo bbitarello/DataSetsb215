@@ -1,0 +1,11 @@
+## R markdown
+
+For this portion we are going to use Rstudio's R markdown tutorial. They created R markdown, after all.
+
+Remember: all your Lab Assignments will need to be written in R markdown, so take the time to learn this.
+
+* Go to [https://rmarkdown.rstudio.com/lesson-1.html](https://rmarkdown.rstudio.com/lesson-1.html) and complete the tutorial
+* Make sure you use your Posit cloud workspace to try out things.
+* When you're done, restart this tutorial and continue from here.
+
+For future reference, there is no need to memorize anything, check out [this handy cheat sheet](https://github.com/rstudio/cheatsheets/raw/main/rmarkdown-2.0.pdf) and [this reference guide](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf) anytime. 
