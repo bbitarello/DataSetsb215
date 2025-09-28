@@ -77,6 +77,14 @@ guppyFatherSonData <-read.csv("https://raw.githubusercontent.com/bitarellolab/Te
 4. The `ggplot2` package for plots
 
 
+## Learn More
+
+* [Tidyverse cookbook: https://rstudio-education.github.io/tidyverse-cookbook/](https://rstudio-education.github.io/tidyverse-cookbook/)
+* [Data Organization in Spreadsheets](https://www.tandfonline.com/doi/citedby/10.1080/00031305.2017.1375989?scroll=top&needAccess=true) 
+* [Tidy Data](https://vita.had.co.nz/papers/tidy-data.pdf)       
+* [R Labs from your textbook.](https://whitlockschluter3e.zoology.ubc.ca/RLabs/index.html)
+
+
 ## Installing and loading packages
 First of all, let's install the packages `dplyr` and `ggplot`. 
 
@@ -192,9 +200,7 @@ str(bat_tongue)
 head(bat_tongue)
 ```
 
-```{r bat1-check}
-grade_code()
-```
+
 
 
 When handed data to analyze, it is good practice to ask yourself if it is tidy. If it isn't, you can modify it and save a new version after you've processed it. How?
@@ -486,6 +492,8 @@ mutate(iris_sepal, leng_wid_ratio = Sepal.Length/Sepal.Width)
 ### `summarise()`
 
 `summarise()` collapses a data frame to a single row of summaries. You get to choose how many summaries appear in the row and how they are computed:
+
+
 
 ```{r tit11, exercise=TRUE, exercise.setup="setupnum"}
 
@@ -1030,22 +1038,7 @@ quiz(caption="dplyr!",
 * [R markdown reference guide](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf)
 * [Ten Simple Rules for Reproducible Computational Research](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003285)*  
 
-#### Other {-}
 
-* [Tidyverse cookbook: https://rstudio-education.github.io/tidyverse-cookbook/](https://rstudio-education.github.io/tidyverse-cookbook/)
-* [Data Organization in Spreadsheets](https://www.tandfonline.com/doi/citedby/10.1080/00031305.2017.1375989?scroll=top&needAccess=true) 
-* [Tidy Data](https://vita.had.co.nz/papers/tidy-data.pdf)       
-* [R Labs from your textbook.](https://whitlockschluter3e.zoology.ubc.ca/RLabs/index.html)
-
-
-
-## Export your PDF
-
-
-* As usual, when you're done save this ocmpleted activity as a PDF. 
-* Make sure you're on the last page when you do so
-* Check that the PDF looks right
-* Upload on Moodle
-
-The end!
-
+## Download your answers
+```{r download-answers, child = system.file("child_documents/download_answers.Rmd", package = "tutorial.helpers"), echo = F}
+```
