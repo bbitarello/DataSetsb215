@@ -1,16 +1,17 @@
 ---
 title: "Crash Course"
-output: 
+description: "Your first baby steps into R"
+runtime: shiny_prerendered
+output:
   learnr::tutorial:
     progressive: true
     allow_skip: false
-    id: "com.example.tutorials.lab1"
-    version: 1.5
+    id: "ff0ef91f-7b5b-4f22-87ed-8eb9583254f2"
+    version: 2
     mathjax: default
     toc: true
-runtime: shiny_prerendered
-editor_options: 
-  markdown: 
+editor_options:
+  markdown:
     wrap: 72
 ---
 
@@ -20,10 +21,10 @@ library(tutorial.helpers)
 library(gradethis)
 library(tidyverse)
 library(knitr)
-library(ggmosaic)
-library(praise)
+#library(ggmosaic)
+#library(praise)
 library(utils)
-knitr::opts_chunk$set(echo = FALSE, tidy = T)
+knitr::opts_chunk$set(echo = TRUE, tidy = T, root.dir = '/Users/bbitarello/Documents/GitHub/DataSetsb215/inst/tutorials/Lab1/')
 ```
 
 <script language="JavaScript" src="js/exercise-font-size.js"></script>
@@ -528,7 +529,7 @@ learnr::run_tutorial("Quiz1.Rmd")
 ```
 
 
-```{r download-answers, child = system.file("child_documents/download_answers.Rmd", package = "tutorial.helpers")}
+```{r download-answers, echo =F,child = system.file("child_documents/download_answers.Rmd", package = "tutorial.helpers")}
 ```
 ## Links & References
 

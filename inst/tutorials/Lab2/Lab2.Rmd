@@ -1,29 +1,28 @@
 ---
 title: "Data Structures"
-output: learnr::tutorial
+output: 
+  learnr::tutorial:
+    toc: true
+    progressive: true
+    id: c67da4e7-6b70-4cd5-ba19-4debe68b2f83
 runtime: shiny_prerendered
 editor_options: 
   markdown: 
     wrap: 72
 ---
 
-```{r setup, include=FALSE}
+
+```{r setup, include = FALSE}
 library(learnr)
 library(tutorial.helpers)
-library(gradethis)
-library(tidyverse)
 library(knitr)
-library(ggmosaic)
-library(praise)
-library(utils)
-knitr::opts_chunk$set(echo = FALSE, tidy = T, eval = F)
-tutorial_options(exercise.eval = TRUE, exercise.reveal_solution = FALSE)
- gradethis::gradethis_setup(
-   pass.praise = TRUE,
-   fail.encourage = TRUE)
 
-
+knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(out.width = '90%')
+options(tutorial.exercise.timelimit = 60,
+        tutorial.storage = "local")
 ```
+
 
 ## Welcome!
 
@@ -49,16 +48,7 @@ deeper so that you can feel as happy as this in no-time!
 -   Practice code from lectures in your Posit Cloud workspace
 -   Start working on your DataCamps for next lab
 
-### Acknowledgments
 
-A lot of the materials here are based on the following:
-
-[Advanced R](http://adv-r.had.co.nz/Data-structures.html), by Hadley
-Wickham
-
-Three wonderful undergraduate students @BMC who helped developed parts
-of these lessons: Daphne Hansell (BMC' 24), Levi Raskin (HC' 24), and
-Nicole Cavalieri ('26).
 
 ## Why learn this stuff??
 
@@ -266,7 +256,7 @@ typeof(cashewIsCute3)
 ```
 
 ```{r cashewiscute-check}
-grade_this_code()
+#grade_this_code()
 ```
 
 ## Character
@@ -555,18 +545,10 @@ status element from the list above:
 
 ```
 
-```{r species5-solution}
-# first using [[]], no need to store in an object
-species_info_list[[3]]
-# then using ["Name"], no need to store in an object
-species_info_list['Endangered']
 
-# then using $, no need to store in an object
-species_info_list$Endangered
-```
 
 ```{r species5-check, echo = F, include = F}
-grade_this_code()
+#grade_this_code()
 ```
 
 ## Matrix
@@ -654,14 +636,18 @@ interested in in the original dataframe.
 # print it using `print()`
 ```
 
-```{r dfex1-solution}
-family <- species_info$Family
-print(family)
-```
-
-```{r dfex1-check}
-grade_this_code()
-```
 
 ```{r download-answers, child = system.file("child_documents/download_answers.Rmd", package = "tutorial.helpers")}
 ```
+
+
+### Acknowledgments
+
+A lot of the materials here are based on the following:
+
+[Advanced R](http://adv-r.had.co.nz/Data-structures.html), by Hadley
+Wickham
+
+Three wonderful undergraduate students @BMC who helped developed parts
+of these lessons: Daphne Hansell (BMC' 24), Levi Raskin (HC' 24), and
+Nicole Cavalieri ('26).
